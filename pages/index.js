@@ -47,7 +47,6 @@ const Home = (props) => {
 
   return (
     <>
-      <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>
       <div className="home-container">
         <Navbar></Navbar>
         <Hero rootClassName="hero-root-class-name"></Hero>
@@ -67,6 +66,7 @@ const Home = (props) => {
         <Contact></Contact>
         <SectionSeparator></SectionSeparator>
         <Gallery></Gallery>
+        <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>
       </div>
       <style jsx>
         {`
