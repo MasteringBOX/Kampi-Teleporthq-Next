@@ -23,6 +23,7 @@ const Home2 = (props) => {
                 <HeroReverse></HeroReverse>
                 <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Pricing rootClassName="pricing-root-class-name"></Pricing>
+                <Historia></Historia>
                 <style jsx>
                     {`
           .home-container {
