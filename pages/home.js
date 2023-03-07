@@ -15,6 +15,12 @@ const Home2 = (props) => {
         <>
             <div className="home-container">
                 <Navbar></Navbar>
+                <Hero rootClassName="hero-root-class-name"></Hero>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
+                <Stats rootClassName="stats-root-class-name"></Stats>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
+                <Testimonials></Testimonials>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Contact></Contact>
                 <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Gallery></Gallery>
