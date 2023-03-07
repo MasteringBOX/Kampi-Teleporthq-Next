@@ -12,7 +12,7 @@ const Contact = (props) => {
             <form
               action="https://formsubmit.co/6a36b53216d02edfc1b6be1c751dcab8"
               method="POST"
-              enctype="application/x-www-form-urlencoded"
+              encType="application/x-www-form-urlencoded"
               className="contact-form"
             >
               <input
@@ -39,7 +39,6 @@ const Contact = (props) => {
               />
               <select
                 name="Seleccion"
-                type="seleccion"
                 className="contact-select"
               >
                 <option value="Tengo Preguntas Sobre Kampi" selected>
