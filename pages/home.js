@@ -12,7 +12,6 @@ import Gallery from '../components/gallery'
 
 const Home2 = (props) => {
     return (
-        <>
             <div className="home-container">
                 <Navbar></Navbar>
                 <Hero rootClassName="hero-root-class-name"></Hero>
@@ -27,13 +26,8 @@ const Home2 = (props) => {
                 <Historia></Historia>
                 <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Testimonials></Testimonials>
-                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
-                <Contact></Contact>
-                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
-                <Gallery></Gallery>
-                </div>
-            <style jsx>
-                {`
+                <style jsx>
+                    {`
           .home-container {
             width: 100%;
             height: auto;
@@ -43,8 +37,9 @@ const Home2 = (props) => {
             flex-direction: column;
           }
         `}
-            </style>
-        </>
+                </style>
+                </div>
+
     )
 }
 
