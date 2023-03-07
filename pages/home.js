@@ -28,8 +28,9 @@ const Home2 = (props) => {
                 <SectionSeparator rootClassName="section-separator-root-class-name4"></SectionSeparator>
                 <Testimonials></Testimonials>
                 <SectionSeparator rootClassName="section-separator-root-class-name5"></SectionSeparator>
-                <SectionSeparator></SectionSeparator>
                 <Contact></Contact>
+                <SectionSeparator rootClassName="section-separator-root-class-name5"></SectionSeparator>
+                <Gallery></Gallery>
                 </div>
             <style jsx>
                 {`
