@@ -1,0 +1,316 @@
+.reserva-kampi-container {
+    width: 500px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Section-Heading{
+    margin-bottom: 16px;
+}
+
+.reserva-kampi-disabled-without-price {
+    all: inherit;
+}
+.reserva-kampi-container-gap {
+    gap: var(--dl-space-space-doubleunit);
+    display: flex;
+    flex-direction: column;
+}
+.reserva-kampi-icon {
+    left: 0;
+    width: 32px;
+    height: auto;
+    position: absolute;
+    cursor:pointer;
+}
+.reserva-kampi-image {
+    width: 520px;
+    object-fit: cover;
+}
+.reserva-kampi-form {
+    gap: var(--dl-space-space-doubleunit);
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-right: 0px;
+    flex-direction: column;
+}
+.reserva-kampi-container01 {
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.reserva-kampi-container02 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.reserva-kampi-container03 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.reserva-kampi-container04 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.reserva-kampi-container05 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    padding-left: var(--dl-space-space-tripleunit);
+    flex-direction: column;
+    justify-content: center;
+}
+.reserva-kampi-container06 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.reserva-kampi-container07 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.reserva-kampi-text-bold {
+    font-weight: bold;
+}
+.reserva-kampi-select {
+    color: var(--dl-color-gray-black);
+    width: 100%;
+    padding: var(--dl-space-space-unit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+}
+.reserva-kampi-container08 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding-top: var(--dl-space-space-doubleunit);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-doubleunit);
+    justify-content: center;
+}
+.reserva-kampi-text06 {
+    align-self: center;
+}
+.reserva-kampi-text07 {
+    font-size: 28px;
+    align-self: center;
+    font-family: Open Sans;
+    font-weight: 700;
+    line-height: 1.22;
+    text-transform: none;
+    text-decoration: none;
+}
+.reserva-kampi-container09 {
+    gap: var(--dl-space-space-doubleunit);
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.reserva-kampi-select1 {
+    color: var(--dl-color-gray-black);
+    width: 80px;
+    padding: var(--dl-space-space-unit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+}
+.reserva-kampi-select2 {
+    color: var(--dl-color-gray-black);
+    width: 150px;
+    padding: var(--dl-space-space-unit);
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+}
+.reserva-kampi-select3 {
+    color: var(--dl-color-gray-black);
+    width: 200px;
+    padding: var(--dl-space-space-unit);
+    align-self: center;
+    border-color: var(--dl-color-gray-black);
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-radius4);
+}
+.reserva-kampi-cta-btn {
+    color: var(--dl-color-gray-white);
+    cursor: pointer;
+    align-self: stretch;
+    text-align: center;
+    padding-top: var(--dl-space-space-doubleunit);
+    border-width: 0px;
+    border-radius: 34px;
+    padding-bottom: var(--dl-space-space-doubleunit);
+    background-color: var(--dl-color-primary-100);
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.wrapper {
+    width: 550px;
+    padding:30px;
+}
+@media(max-width: 991px) {
+    .reserva-kampi-select {
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-right: var(--dl-space-space-unit);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-select1 {
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-right: var(--dl-space-space-unit);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-select2 {
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-right: var(--dl-space-space-unit);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-select3 {
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-right: var(--dl-space-space-unit);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+}
+@media(max-width: 767px) {
+    .reserva-kampi-text {
+        font-size: 24px;
+        font-family: Open Sans;
+        font-weight: 700;
+        line-height: 1.22;
+        text-transform: none;
+        text-decoration: none;
+    }
+    .reserva-kampi-select {
+        width: 100%;
+        align-self: flex-start;
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-select1 {
+        width: 100%;
+        align-self: flex-start;
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-select2 {
+        width: 100%;
+        align-self: flex-start;
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-select3 {
+        width: 100%;
+        align-self: flex-start;
+        padding-top: var(--dl-space-space-unit);
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+        padding-left: var(--dl-space-space-unit);
+        border-radius: var(--dl-radius-radius-radius4);
+        padding-bottom: var(--dl-space-space-unit);
+    }
+    .reserva-kampi-cta-btn {
+        width: auto;
+        align-self: center;
+    }
+}
+@media(max-width: 550px) {
+
+    .reserva-kampi-container {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+    }
+}
+@media(max-width: 479px) {
+
+    .reserva-kampi-form {
+        width: 100%;
+    }
+    .reserva-kampi-select {
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+    }
+    .reserva-kampi-select1 {
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+    }
+    .reserva-kampi-select2 {
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+    }
+    .reserva-kampi-select3 {
+        border-color: var(--dl-color-gray-black);
+        border-width: 1px;
+    }
+}

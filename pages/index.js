@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import Head from 'next/head'
 
 import Navbar from '../components/navbar'
@@ -12,10 +12,42 @@ import Historia from '../components/historia'
 import Testimonials from '../components/testimonials'
 import Contact from '../components/contact'
 import Gallery from '../components/gallery'
-
+import BookingForm from "../components/BookingForm";
 const Home = (props) => {
+
+    /* MY CODE */
+    const [sidebar, setSidebar] = useState(false);
+
+    const handleOnCloseSidebar = () => {
+      setSidebar(false);
+    }
+
+    function handleClick(event) {
+      console.log("handleClick Called");
+      setSidebar(true);
+    }
+
+    const reservaRef = useRef([]);
+
+    useEffect(() => {
+      const elements = document.querySelectorAll('.reservar');
+      reservaRef.current = elements;
+      elements.forEach((element) => {
+        element.addEventListener('click', handleClick);
+      });
+
+      return () => {
+        reservaRef.current.forEach((element) => {
+          element.removeEventListener('click', handleClick);
+        });
+      };
+    }, []);
+
+    // END MY CODE
+
   return (
     <>
+      <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>
       <div className="home-container">
         <Head>
           <title>Kampi</title>
