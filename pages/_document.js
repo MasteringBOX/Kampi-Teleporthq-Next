@@ -4,10 +4,6 @@ class CustomDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          ></meta>
             <link rel="shortcut icon" href="/playground_assets/logo-no-background.png" />
           <meta charSet="utf-8"></meta>
           <meta property="twitter:card" content="summary_large_image"></meta>
@@ -41,7 +37,6 @@ class CustomDocument extends Document {
                 '</noscript><style>\nhtml {\nscroll-behavior: smooth;\n}\n</style><noscript>',
             }}
           ></noscript>
-            <title>Kampi - Alquiler de Camper en Valencia - Alquila la autocaravana de tus sueños</title>
         </Head>
         <body>
           <Main></Main>

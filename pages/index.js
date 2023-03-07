@@ -49,10 +49,6 @@ const Home = (props) => {
     <>
       <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>
       <div className="home-container">
-        <Head>
-          <title>Kampi</title>
-          <meta property="og:title" content="Kampi" />
-        </Head>
         <Navbar></Navbar>
         <Hero rootClassName="hero-root-class-name"></Hero>
         <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
