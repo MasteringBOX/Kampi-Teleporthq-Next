@@ -1,6 +1,3 @@
-import React, {useEffect, useRef, useState} from 'react'
-import Head from 'next/head'
-
 import Navbar from '../components/navbar'
 import Hero from '../components/hero'
 import SectionSeparator from '../components/section-separator'
@@ -12,41 +9,8 @@ import Historia from '../components/historia'
 import Testimonials from '../components/testimonials'
 import Contact from '../components/contact'
 import Gallery from '../components/gallery'
-const BookingForm = dynamic(() => import("../components/BookingForm"))
-import dynamic from 'next/dynamic'
 
 const Home2 = (props) => {
-
-    /* MY CODE */
-    const [sidebar, setSidebar] = useState(false);
-
-    const handleOnCloseSidebar = () => {
-        setSidebar(false);
-    }
-
-    function handleClick(event) {
-        console.log("handleClick Called");
-        setSidebar(true);
-    }
-
-    const reservaRef = useRef([]);
-
-    useEffect(() => {
-        const elements = document.querySelectorAll('.reservar');
-        reservaRef.current = elements;
-        elements.forEach((element) => {
-            element.addEventListener('click', handleClick);
-        });
-
-        return () => {
-            reservaRef.current.forEach((element) => {
-                element.removeEventListener('click', handleClick);
-            });
-        };
-    }, []);
-
-    // END MY CODE
-
     return (
         <>
             <div className="home-container">
@@ -68,8 +32,7 @@ const Home2 = (props) => {
                 <Contact></Contact>
                 <SectionSeparator></SectionSeparator>
                 <Gallery></Gallery>
-                {sidebar && <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>}
-            </div>
+                </div>
             <style jsx>
                 {`
           .home-container {
