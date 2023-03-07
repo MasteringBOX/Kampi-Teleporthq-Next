@@ -21,11 +21,6 @@ const Home2 = (props) => {
                 <Features></Features>
                 <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <HeroReverse></HeroReverse>
-                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
-                <Pricing rootClassName="pricing-root-class-name"></Pricing>
-                <Historia></Historia>
-                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
-                <Testimonials></Testimonials>
                 <style jsx>
                     {`
           .home-container {
