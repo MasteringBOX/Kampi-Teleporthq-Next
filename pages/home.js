@@ -18,18 +18,14 @@ const Home2 = (props) => {
                 <Hero rootClassName="hero-root-class-name"></Hero>
                 <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Stats rootClassName="stats-root-class-name"></Stats>
-                <SectionSeparator rootClassName="section-separator-root-class-name1"></SectionSeparator>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Features></Features>
-                <SectionSeparator rootClassName="section-separator-root-class-name2"></SectionSeparator>
-                <HeroReverse></HeroReverse>
-                <SectionSeparator rootClassName="section-separator-root-class-name3"></SectionSeparator>
-                <Pricing rootClassName="pricing-root-class-name"></Pricing>
                 <Historia></Historia>
-                <SectionSeparator rootClassName="section-separator-root-class-name4"></SectionSeparator>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Testimonials></Testimonials>
-                <SectionSeparator rootClassName="section-separator-root-class-name5"></SectionSeparator>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Contact></Contact>
-                <SectionSeparator rootClassName="section-separator-root-class-name5"></SectionSeparator>
+                <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
                 <Gallery></Gallery>
                 </div>
             <style jsx>
