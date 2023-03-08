@@ -6,7 +6,7 @@ const HeroReverse = (props) => {
   return (
     <>
       <div className="hero-reverse-hero">
-        <img
+        <next/image
           alt={props.Image_alt}
           src={props.Image_src}
           loading="lazy"

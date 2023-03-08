@@ -6,7 +6,7 @@ const GalleryCard3 = (props) => {
   return (
     <>
       <div className={`gallery-card3-gallery-card ${props.rootClassName} `}>
-        <img
+        <next/image
           alt={props.image_alt}
           src={props.image_src}
           loading="lazy"

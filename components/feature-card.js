@@ -6,7 +6,7 @@ const FeatureCard = (props) => {
   return (
     <>
       <div className={`feature-card-feature-card ${props.rootClassName} `}>
-        <img
+        <next/image
           alt={props.image_alt1}
           src={props.image_src1}
           loading="lazy"

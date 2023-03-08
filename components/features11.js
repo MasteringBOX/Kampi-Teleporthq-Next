@@ -16,7 +16,7 @@ const Features11 = (props) => {
               </h1>
             </div>
             <div className="features11-container2">
-              <img
+              <next/image
                 alt={props.image_alt6}
                 src={props.image_src6}
                 className="features11-image"
