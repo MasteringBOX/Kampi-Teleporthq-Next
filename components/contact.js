@@ -39,6 +39,7 @@ const Contact = (props) => {
               />
               <select
                 name="Seleccion"
+                type="seleccion"
                 className="contact-select"
               >
                 <option value="Tengo Preguntas Sobre Kampi" selected>

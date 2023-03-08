@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 import PropTypes from 'prop-types'
 
 const Hero = (props) => {
@@ -26,12 +26,16 @@ const Hero = (props) => {
             {props.Cta_btn}
           </button>
         </div>
-        <img
+        <div className={'hero-image'}>
+        <Image
           alt={props.Image_alt}
           src="/playground_assets/francia%20con%20sarah-1500w.jpg"
-          loading="eager"
-          className="hero-image"
+          width={0}
+          height={0}
+          priority
+          style={{width:"100%", height:"auto", objectFit: "contain", borderRadius: "var(--dl-radius-radius-radius4)"}}
         />
+        </div>
       </div>
       <style jsx>
         {`
@@ -122,10 +126,6 @@ const Hero = (props) => {
             }
             .hero-text {
               text-align: justify;
-            }
-            .hero-image {
-              width: 100%;
-              content: url(/playground_assets/francia con sarah [1].jpg);
             }
             .hero-root-class-name {
               margin-top: 0px;

@@ -1,16 +1,17 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
+import Image from 'next/image'
 
 const GalleryCard3 = (props) => {
   return (
     <>
       <div className={`gallery-card3-gallery-card ${props.rootClassName} `}>
-        <next/image
+        <Image
           alt={props.image_alt}
           src={props.image_src}
-          loading="lazy"
           className="gallery-card3-image"
+          fill
         />
         <div className="gallery-card3-container">
           <h1 className="gallery-card3-text">{props.title}</h1>

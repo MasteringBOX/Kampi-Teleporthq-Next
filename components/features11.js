@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import FeatureCard from './feature-card'
+import Image from 'next/image'
 
 const Features11 = (props) => {
   return (
@@ -16,10 +17,12 @@ const Features11 = (props) => {
               </h1>
             </div>
             <div className="features11-container2">
-              <next/image
+              <Image
                 alt={props.image_alt6}
                 src={props.image_src6}
-                className="features11-image"
+                width={150}
+                height={150}
+                objectFit={"cover"}
               />
             </div>
             <div className="features11-container3"></div>

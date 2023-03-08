@@ -1,17 +1,21 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-
+import Image from "next/image"
 const FeatureCard = (props) => {
   return (
     <>
       <div className={`feature-card-feature-card ${props.rootClassName} `}>
-        <next/image
+        <div className={"feature-image"}>
+        <Image
           alt={props.image_alt1}
           src={props.image_src1}
-          loading="lazy"
-          className="feature-card-image"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto', borderRadius:'4px', objectFit: "cover", maxHeight: "400px"}}
         />
+        </div>
         <span className="feature-card-heading Card-Heading">
           {props.Heading1}
         </span>
@@ -30,10 +34,9 @@ const FeatureCard = (props) => {
             flex-direction: column;
             padding-bottom: var(--dl-space-space-doubleunit);
           }
-          .feature-card-image {
+          .feature-image {
             width: 100%;
             box-shadow: 5px 5px 10px 0px #d4d4d4;
-            object-fit: cover;
             border-radius: var(--dl-radius-radius-radius8);
             margin-bottom: 20px;
           }
@@ -74,12 +77,6 @@ const FeatureCard = (props) => {
               width: 30%;
             }
           }
-          @media (max-width: 991px) {
-            .feature-card-image {
-              width: 100%;
-              height: auto;
-            }
-          }
           @media (max-width: 767px) {
             .feature-card-feature-card {
               width: 70%;
@@ -91,7 +88,7 @@ const FeatureCard = (props) => {
               width: 100%;
               height: auto;
             }
-            .feature-card-image {
+            .feature-image {
               width: 80%;
             }
           }

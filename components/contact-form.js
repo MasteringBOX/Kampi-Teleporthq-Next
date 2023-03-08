@@ -10,7 +10,7 @@ const ContactForm = (props) => {
         className={`contact-form-container ${props.rootClassName} `}
       >
         <div className="contact-form-container1">
-          <next/image
+          <img
             alt={props.image_alt}
             src={props.image_src}
             className="contact-form-image"

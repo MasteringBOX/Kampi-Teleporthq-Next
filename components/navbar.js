@@ -11,7 +11,7 @@ const Navbar = (props) => {
       >
         <div className="navbar-navbar">
           <div className="navbar-logo">
-            <next/image
+            <img
               alt={props.Image_alt}
               src={props.Image_src}
               className="navbar-image"
