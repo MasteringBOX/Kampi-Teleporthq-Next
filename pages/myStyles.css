@@ -4,6 +4,15 @@
     overflow-y:visible !important;
     overflow-x: hidden !important;
 }
+/* ONLY NECESSARY IN VERCEL, LICENSE MAYBE: x0jTPl0USVkVZV0SsMjM1kDNyADM5cjM2ETPZJVSQhVRsIDN0YTM6IVREJ1T0b9586ef25c9853decfa7709eee27a1e */
+.MuiPickersPopper-paper> div > div:first-child {
+    display: none;
+}
+
+.MuiDialogContent-root > div > div:first-child {
+    display: none;
+}
+/* END VERCEL */
 
 .rs-picker-price {
     bottom: 38px;
