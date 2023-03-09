@@ -4,7 +4,10 @@ class CustomDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-            <link rel="shortcut icon" href="/playground_assets/logo-no-background.png" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          ></meta>
           <meta charSet="utf-8"></meta>
           <meta property="twitter:card" content="summary_large_image"></meta>
           <style

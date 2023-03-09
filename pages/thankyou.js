@@ -8,8 +8,8 @@ const Thankyou = (props) => {
     <>
       <div className="thankyou-container">
         <Head>
-          <title>Thankyou - Kampi</title>
-          <meta property="og:title" content="Thankyou - Kampi" />
+          <title>Thankyou - Kampi-Teleporthq</title>
+          <meta property="og:title" content="Thankyou - Kampi-Teleporthq" />
         </Head>
         <Thanks rootClassName="thanks-root-class-name"></Thanks>
       </div>

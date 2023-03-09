@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React from 'react'
 import Head from 'next/head'
 
 import Navbar from '../components/navbar'
@@ -12,50 +12,21 @@ import Historia from '../components/historia'
 import Testimonials from '../components/testimonials'
 import Contact from '../components/contact'
 import Gallery from '../components/gallery'
-import {SideBar} from "../components/SideBar";
-
 
 const Home = (props) => {
-
-    /* MY CODE */
-    const [sidebar, setSidebar] = useState(false);
-
-    const handleOnCloseSidebar = () => {
-      setSidebar(false);
-    }
-
-    function handleClick(event) {
-      console.log("handleClick Called");
-      setSidebar(true);
-    }
-
-    const reservaRef = useRef([]);
-
-    useEffect(() => {
-      const elements = document.querySelectorAll('.reservar');
-      reservaRef.current = elements;
-      elements.forEach((element) => {
-        element.addEventListener('click', handleClick);
-      });
-
-      return () => {
-        reservaRef.current.forEach((element) => {
-          element.removeEventListener('click', handleClick);
-        });
-      };
-    }, []);
-
-    // END MY CODE
-
   return (
     <>
       <div className="home-container">
+        <Head>
+          <title>Kampi-Teleporthq</title>
+          <meta property="og:title" content="Kampi-Teleporthq" />
+        </Head>
         <Navbar></Navbar>
         <Hero rootClassName="hero-root-class-name"></Hero>
         <SectionSeparator rootClassName="section-separator-root-class-name"></SectionSeparator>
         <Stats rootClassName="stats-root-class-name"></Stats>
         <SectionSeparator rootClassName="section-separator-root-class-name1"></SectionSeparator>
-        <Features></Features>
+        <Features rootClassName="features-root-class-name"></Features>
         <SectionSeparator rootClassName="section-separator-root-class-name2"></SectionSeparator>
         <HeroReverse></HeroReverse>
         <SectionSeparator rootClassName="section-separator-root-class-name3"></SectionSeparator>
@@ -68,7 +39,6 @@ const Home = (props) => {
         <Contact></Contact>
         <SectionSeparator></SectionSeparator>
         <Gallery></Gallery>
-        <SideBar sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></SideBar>
       </div>
       <style jsx>
         {`

@@ -1,21 +1,17 @@
 import React from 'react'
-import Image from 'next/image'
+
 import PropTypes from 'prop-types'
 
 const HeroReverse = (props) => {
   return (
     <>
       <div className="hero-reverse-hero">
-        <div className={"hero-reverse-image"}>
-        <Image
+        <img
           alt={props.Image_alt}
           src={props.Image_src}
-          width={0}
-          height={0}
           loading="lazy"
-          style={{width:"100%", height: "auto", objectFit: "contain", borderRadius: "var(--dl-radius-radius-radius4)"}}
+          className="hero-reverse-image"
         />
-        </div>
         <div className="hero-reverse-hero-text-container">
           <h1 className="hero-reverse-heading">{props.Heading}</h1>
           <span className="hero-reverse-text">

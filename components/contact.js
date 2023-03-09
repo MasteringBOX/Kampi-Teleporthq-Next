@@ -12,7 +12,7 @@ const Contact = (props) => {
             <form
               action="https://formsubmit.co/6a36b53216d02edfc1b6be1c751dcab8"
               method="POST"
-              encType="application/x-www-form-urlencoded"
+              enctype="application/x-www-form-urlencoded"
               className="contact-form"
             >
               <input
@@ -32,16 +32,17 @@ const Contact = (props) => {
               <input
                 type="text"
                 name="email"
+                multiple="email"
                 required
                 placeholder={props.email}
                 className="input"
               />
               <select
                 name="Seleccion"
+                type="seleccion"
                 className="contact-select"
-                defaultValue={"Tengo Preguntas Sobre Kampi"}
               >
-                <option value="Tengo Preguntas Sobre Kampi">
+                <option value="Tengo Preguntas Sobre Kampi" selected>
                   Tengo preguntas sobre Kampi
                 </option>
                 <option value="Quiero Dejar un comentario">

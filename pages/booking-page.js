@@ -8,8 +8,8 @@ const BookingPage = (props) => {
     <>
       <div className="booking-page-container">
         <Head>
-          <title>BookingPage - Kampi</title>
-          <meta property="og:title" content="BookingPage - Kampi" />
+          <title>BookingPage - Kampi-Teleporthq</title>
+          <meta property="og:title" content="BookingPage - Kampi-Teleporthq" />
         </Head>
         <ReservaKampi></ReservaKampi>
       </div>

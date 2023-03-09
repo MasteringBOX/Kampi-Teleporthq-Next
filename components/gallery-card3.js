@@ -1,21 +1,16 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import Image from 'next/image'
 
 const GalleryCard3 = (props) => {
   return (
     <>
       <div className={`gallery-card3-gallery-card ${props.rootClassName} `}>
-        <Image
+        <img
           alt={props.image_alt}
           src={props.image_src}
+          loading="lazy"
           className="gallery-card3-image"
-          sizes="100vw"
-          width={0}
-          height={0}
-          style={{ width: '100%', height: '100%', objectFit: "cover", top: "0px",
-            margin: "auto", position:"absolute", left: "0px", right: "0px", bottom: "auto"}}
         />
         <div className="gallery-card3-container">
           <h1 className="gallery-card3-text">{props.title}</h1>

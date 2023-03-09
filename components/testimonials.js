@@ -8,7 +8,7 @@ const Testimonials = (props) => {
       <div id="opiniones" className="testimonials-testimonials">
         <h2 className="testimonials-text Section-Heading">{props.heading}</h2>
         <div className="testimonials-cards-container">
-          <div className="testimonials-testimonial-card">
+          <div className="testimonial-card">
             <div className="testimonials-card-heading">
               <div className="testimonials-name-and-position">
                 <span className="Card-Heading">{props.Name}</span>
@@ -49,9 +49,9 @@ const Testimonials = (props) => {
                 </svg>
               </div>
             </div>
-            <span className="testimonials-text1">{props.text1}</span>
+            <span className="testimonial-card-text">{props.text1}</span>
           </div>
-          <div className="testimonials-testimonial-card1">
+          <div className="testimonial-card">
             <div className="testimonials-card-heading1">
               <div className="testimonials-name-and-position1">
                 <span className="Card-Heading">{props.Name1}</span>
@@ -92,9 +92,9 @@ const Testimonials = (props) => {
                 </svg>
               </div>
             </div>
-            <span className="testimonials-text2">{props.text2}</span>
+            <span className="testimonial-card-text">{props.text2}</span>
           </div>
-          <div className="testimonials-testimonial-card2">
+          <div className="testimonial-card">
             <div className="testimonials-card-heading2">
               <div className="testimonials-name-and-position2">
                 <span className="Card-Heading">{props.Name2}</span>
@@ -135,7 +135,7 @@ const Testimonials = (props) => {
                 </svg>
               </div>
             </div>
-            <span className="testimonials-text3 Card-Text">{props.text3}</span>
+            <span className="testimonial-card-text">{props.text3}</span>
           </div>
         </div>
         <div className="testimonials-banner">
@@ -179,20 +179,6 @@ const Testimonials = (props) => {
             align-items: flex-start;
             flex-direction: row;
             justify-content: space-between;
-          }
-          .testimonials-testimonial-card {
-            width: 30%;
-            display: flex;
-            padding: var(--dl-space-space-fourunits);
-            align-items: center;
-            padding-top: var(--dl-space-space-doubleunit);
-            border-color: var(--dl-color-gray-500);
-            border-width: 1px;
-            padding-left: var(--dl-space-space-doubleunit);
-            border-radius: var(--dl-radius-radius-radius4);
-            padding-right: var(--dl-space-space-doubleunit);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-doubleunit);
           }
           .testimonials-card-heading {
             width: 100%;
@@ -256,24 +242,6 @@ const Testimonials = (props) => {
             height: 24px;
             margin-right: var(--dl-space-space-unit);
           }
-          .testimonials-text1 {
-            color: var(--dl-color-gray-500);
-            text-align: justify;
-          }
-          .testimonials-testimonial-card1 {
-            width: 30%;
-            display: flex;
-            padding: var(--dl-space-space-fourunits);
-            align-items: center;
-            padding-top: var(--dl-space-space-doubleunit);
-            border-color: var(--dl-color-gray-500);
-            border-width: 1px;
-            padding-left: var(--dl-space-space-doubleunit);
-            border-radius: var(--dl-radius-radius-radius4);
-            padding-right: var(--dl-space-space-doubleunit);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-doubleunit);
-          }
           .testimonials-card-heading1 {
             width: 100%;
             display: flex;
@@ -334,24 +302,6 @@ const Testimonials = (props) => {
             fill: var(--dl-color-primary-500);
             width: 24px;
             height: 24px;
-          }
-          .testimonials-text2 {
-            color: var(--dl-color-gray-500);
-            text-align: justify;
-          }
-          .testimonials-testimonial-card2 {
-            width: 30%;
-            display: flex;
-            padding: var(--dl-space-space-fourunits);
-            align-items: center;
-            padding-top: var(--dl-space-space-doubleunit);
-            border-color: var(--dl-color-gray-500);
-            border-width: 1px;
-            padding-left: var(--dl-space-space-doubleunit);
-            border-radius: var(--dl-radius-radius-radius4);
-            padding-right: var(--dl-space-space-doubleunit);
-            flex-direction: column;
-            padding-bottom: var(--dl-space-space-doubleunit);
           }
           .testimonials-card-heading2 {
             width: 100%;
@@ -414,10 +364,6 @@ const Testimonials = (props) => {
             width: 24px;
             height: 24px;
           }
-          .testimonials-text3 {
-            color: var(--dl-color-gray-500);
-            text-align: justify;
-          }
           .testimonials-banner {
             width: 50%;
             display: flex;
@@ -479,23 +425,11 @@ const Testimonials = (props) => {
               align-items: center;
               flex-direction: column;
             }
-            .testimonials-testimonial-card {
-              width: 70%;
-              margin-bottom: var(--dl-space-space-tripleunit);
-            }
             .testimonials-stars-container {
               justify-content: flex-end;
             }
-            .testimonials-testimonial-card1 {
-              width: 70%;
-              margin-bottom: var(--dl-space-space-tripleunit);
-            }
             .testimonials-stars-container1 {
               justify-content: flex-end;
-            }
-            .testimonials-testimonial-card2 {
-              width: 70%;
-              margin-bottom: var(--dl-space-space-tripleunit);
             }
             .testimonials-stars-container2 {
               justify-content: flex-end;
@@ -512,15 +446,6 @@ const Testimonials = (props) => {
           @media (max-width: 479px) {
             .testimonials-text {
               text-align: center;
-            }
-            .testimonials-testimonial-card {
-              width: 100%;
-            }
-            .testimonials-testimonial-card1 {
-              width: 100%;
-            }
-            .testimonials-testimonial-card2 {
-              width: 100%;
             }
             .testimonials-banner {
               padding-top: 48px;

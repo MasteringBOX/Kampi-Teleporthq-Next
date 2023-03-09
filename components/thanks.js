@@ -74,6 +74,7 @@ const Thanks = (props) => {
             background-color: var(--dl-color-primary-100);
           }
           .thanks-root-class-name {
+            align-self: center;
             margin-top: 0px;
             margin-bottom: 0px;
           }

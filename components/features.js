@@ -7,7 +7,10 @@ import FeatureCard from './feature-card'
 const Features = (props) => {
   return (
     <>
-      <div id="features" className="features-features">
+      <div
+        id="features"
+        className={`features-features ${props.rootClassName} `}
+      >
         <div className="features-heading-container">
           <div className="features-container">
             <div className="features-container1">
@@ -29,7 +32,7 @@ const Features = (props) => {
             text1="Dos amplios y cómodos sofás. Con una mesa principal extraible donde pueden comer 4. Mucho almacenamiento útil y accesible. Con 20 cajoneras y 4 muebles altos."
             Heading1="Amplio Comedor"
             image_src1="/playground_assets/img_7287-1500w.jpg"
-            rootClassName="feature-card-root-class-name6"
+            rootClassName="feature-card-root-class-name2"
           ></FeatureCard>
           <FeatureCard></FeatureCard>
           <FeatureCard
@@ -43,7 +46,7 @@ const Features = (props) => {
             text1="Cama amplia y cómoda con un colchon de alta calidad. No notarás que estas durmiendo en una camper. Cama supletoria juntando los dos sofás."
             Heading1="Dulces Sueños"
             image_src1="/playground_assets/img_69781-1500w.jpg"
-            rootClassName="feature-card-root-class-name7"
+            rootClassName="feature-card-root-class-name3"
           ></FeatureCard>
           <FeatureCard
             text1="Internet 4G WIFI con antena para que puedas conectarte donde Sea. TV con Antena TDT, HBO y Amazon Prime. Enchufes 220V hasta 1200w y Tomas USB/USB-C. Luces LED y tiras led regulables en intensidad."
@@ -146,6 +149,7 @@ const Features = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
+
           @media (max-width: 991px) {
             .features-cards-container {
               align-items: flex-start;
@@ -198,6 +202,7 @@ const Features = (props) => {
 }
 
 Features.defaultProps = {
+  rootClassName: '',
   Text: 'Una Camper hecha a mano con amor. Diseñada hasta el último detalle para que sea cómoda, espaciosa, funcional y divertida.',
   heading: 'Así es',
   image_src6: '/playground_assets/logo-no-background.svg',
@@ -205,6 +210,7 @@ Features.defaultProps = {
 }
 
 Features.propTypes = {
+  rootClassName: PropTypes.string,
   Text: PropTypes.string,
   heading: PropTypes.string,
   image_src6: PropTypes.string,

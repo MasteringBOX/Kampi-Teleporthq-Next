@@ -540,6 +540,7 @@ Pricing.defaultProps = {
   text7: 'Temporada Alta',
   Heading: 'Kampi lo vale :)',
   text20: '/ día',
+  rootClassName: '',
   text8: 'Julio y Agosto. Navidades y Semana Santa.',
   Cta_btn2: 'Reservar',
   text2: '*Se pueden contratar más kilómetros',
@@ -549,7 +550,6 @@ Pricing.defaultProps = {
   text19: '129',
   text12: '349',
   text18: '€',
-  rootClassName: '',
 }
 
 Pricing.propTypes = {
@@ -569,6 +569,7 @@ Pricing.propTypes = {
   text7: PropTypes.string,
   Heading: PropTypes.string,
   text20: PropTypes.string,
+  rootClassName: PropTypes.string,
   text8: PropTypes.string,
   Cta_btn2: PropTypes.string,
   text2: PropTypes.string,
@@ -578,7 +579,6 @@ Pricing.propTypes = {
   text19: PropTypes.string,
   text12: PropTypes.string,
   text18: PropTypes.string,
-  rootClassName: PropTypes.string,
 }
 
 export default Pricing

@@ -8,8 +8,8 @@ const Contacto = (props) => {
     <>
       <div className="contacto-container">
         <Head>
-          <title>Contacto - Kampi</title>
-          <meta property="og:title" content="Contacto - Kampi" />
+          <title>Contacto - Kampi-Teleporthq</title>
+          <meta property="og:title" content="Contacto - Kampi-Teleporthq" />
         </Head>
         <Contact rootClassName="contact-root-class-name"></Contact>
       </div>
