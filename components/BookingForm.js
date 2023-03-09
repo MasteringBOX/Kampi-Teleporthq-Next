@@ -21,12 +21,10 @@ const OverlayAnimation = styled(Overlay)`
   z-index: 100;
   transition: all 0.4s ease-in-out;
   opacity: 0;
-  display:none;
   visibility: hidden;
   &.active {
     visibility: visible;
     opacity: 0.2;
-    display:block;
   }
 `;
 
