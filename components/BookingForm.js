@@ -4,44 +4,6 @@ import PropTypes, {number} from 'prop-types'
 
 import PriceDateRangePicker from "./PriceDateRangePicker.tsx";
 import DateSelect from "./DateSelect";
-import styled from 'styled-components'
-
-export const Overlay = styled.div`
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-`;
-
-const OverlayAnimation = styled(Overlay)`
-  z-index: 100;
-  transition: all 0.4s ease-in-out;
-  &.active {
-    visibility: visible;
-    opacity: 0.2;
-  }
-`;
-
-const Wrapper = styled.div`
-  display: flex;
-  z-index: 120;
-  right:-100%;
-  position:fixed;
-  height: 100vh;
-  flex-direction: column;
-  align-items: flex-start;
-  background: white;
-  transition: all 0.4s ease-in-out;
-  overflow-y: scroll;
-  &.active {
-    opacity: 1;
-    right: 0;
-  }
-`;
 
 const BookingForm = (props) => {
 
@@ -49,9 +11,6 @@ const BookingForm = (props) => {
 
     function handlePriceChange(price) {
         setPrice(price);
-    }
-    const handleClose = () => {
-        props.onCloseSidebar();
     }
 
     /** This is not necessary */
@@ -76,11 +35,8 @@ const BookingForm = (props) => {
 
     return (
         <>
-        <OverlayAnimation className={`${props.sidebar && "active"} overlay`} />
-        <Wrapper className={`${props.sidebar && "active"} wrapper`}>
-
         <div className="reserva-kampi-container">
-            <svg viewBox="0 0 1024 1024" className="reserva-kampi-icon" onClick={handleClose}>
+            <svg viewBox="0 0 1024 1024" className="reserva-kampi-icon" onClick={props.onCloseSidebar}>
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
             </svg>
             <h2 className="Section-Heading reserva-kampi-text">{props.heading}</h2>
@@ -156,7 +112,6 @@ const BookingForm = (props) => {
                 </div>
             </form>
         </div>
-    </Wrapper>
             <style jsx>
                 {`
                 .reserva-kampi-container {

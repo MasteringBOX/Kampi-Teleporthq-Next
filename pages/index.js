@@ -12,9 +12,8 @@ import Historia from '../components/historia'
 import Testimonials from '../components/testimonials'
 import Contact from '../components/contact'
 import Gallery from '../components/gallery'
-//import BookingForm from "../components/BookingForm"
-import dynamic from 'next/dynamic'
-const BookingForm = dynamic(() => import("../components/BookingForm"), {ssr: false})
+import {SideBar} from "../components/SideBar";
+
 
 const Home = (props) => {
 
@@ -69,7 +68,7 @@ const Home = (props) => {
         <Contact></Contact>
         <SectionSeparator></SectionSeparator>
         <Gallery></Gallery>
-          {sidebar && <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>}
+        <SideBar sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></SideBar>
       </div>
       <style jsx>
         {`
