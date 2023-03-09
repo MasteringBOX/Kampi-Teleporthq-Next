@@ -69,7 +69,7 @@ const Home = (props) => {
         <Contact></Contact>
         <SectionSeparator></SectionSeparator>
         <Gallery></Gallery>
-        <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>
+          {sidebar && <BookingForm sidebar={sidebar} onCloseSidebar={handleOnCloseSidebar}></BookingForm>}
       </div>
       <style jsx>
         {`
