@@ -7,7 +7,7 @@ export default function MyApp({
   Component: Component,
   pageProps: pageProps
 }) {
-  React.useEffect(() => import("@lottiefiles/lottie-player"));
+  //React.useEffect(() => import("@lottiefiles/lottie-player"));
   return <>
     <Head>
       <meta

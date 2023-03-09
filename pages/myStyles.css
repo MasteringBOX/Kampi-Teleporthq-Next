@@ -233,8 +233,12 @@
     opacity: 0.5;
 }
 .wrapper {
+    display: none;
     width: 550px;
     padding:30px;
+}
+.overlay {
+    opacity:0;
 }
 @media(max-width: 991px) {
     .reserva-kampi-select {

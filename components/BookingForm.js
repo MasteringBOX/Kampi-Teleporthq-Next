@@ -7,21 +7,19 @@ import DateSelect from "./DateSelect";
 import styled from 'styled-components'
 
 export const Overlay = styled.div`
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1040;
   width: 100vw;
   height: 100vh;
   background-color: #000;
-  opacity: 0.2;
 `;
 
 const OverlayAnimation = styled(Overlay)`
   z-index: 100;
   transition: all 0.4s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
   &.active {
     visibility: visible;
     opacity: 0.2;
@@ -29,6 +27,7 @@ const OverlayAnimation = styled(Overlay)`
 `;
 
 const Wrapper = styled.div`
+  display: flex;
   z-index: 120;
   right:-100%;
   position:fixed;
@@ -37,10 +36,8 @@ const Wrapper = styled.div`
   align-items: flex-start;
   background: white;
   transition: all 0.4s ease-in-out;
-  opacity: 0;
   overflow-y: scroll;
   &.active {
-    display: flex;
     opacity: 1;
     right: 0;
   }
@@ -79,7 +76,7 @@ const BookingForm = (props) => {
 
     return (
         <>
-        <OverlayAnimation className={props.sidebar && "active"} />
+        <OverlayAnimation className={`${props.sidebar && "active"} overlay`} />
         <Wrapper className={`${props.sidebar && "active"} wrapper`}>
 
         <div className="reserva-kampi-container">

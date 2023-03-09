@@ -32,17 +32,16 @@ const Contact = (props) => {
               <input
                 type="text"
                 name="email"
-                multiple="email"
                 required
                 placeholder={props.email}
                 className="input"
               />
               <select
                 name="Seleccion"
-                type="seleccion"
                 className="contact-select"
+                defaultValue={"Tengo Preguntas Sobre Kampi"}
               >
-                <option value="Tengo Preguntas Sobre Kampi" selected>
+                <option value="Tengo Preguntas Sobre Kampi">
                   Tengo preguntas sobre Kampi
                 </option>
                 <option value="Quiero Dejar un comentario">

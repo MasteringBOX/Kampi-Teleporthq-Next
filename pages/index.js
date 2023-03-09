@@ -12,8 +12,9 @@ import Historia from '../components/historia'
 import Testimonials from '../components/testimonials'
 import Contact from '../components/contact'
 import Gallery from '../components/gallery'
-const BookingForm = dynamic(() => import("../components/BookingForm"))
+//import BookingForm from "../components/BookingForm"
 import dynamic from 'next/dynamic'
+const BookingForm = dynamic(() => import("../components/BookingForm"), {ssr: false})
 
 const Home = (props) => {
 
